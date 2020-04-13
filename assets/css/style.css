@@ -12,3 +12,13 @@ body{
     border-radius: 20px 
 
 }
+
+#computerchoice-text{
+    background-color: #ffffff; 
+    width: 305px; 
+    height: 125px; 
+    position: absolute; 
+    top: 143px; 
+    left: 500px; 
+    border-radius:  20px;
+}
