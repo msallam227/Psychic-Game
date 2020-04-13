@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>My First Page</title>
+  <title>Psychic Game</title>
 </head>
 
 <body>
 
     <div>
         <p id="directions-text"><h1> Guess a letter!</h1></p>
-        <p id="userchoice-text">Userchoice: </p>
+        <p id="userchoice-text">User choice: </p>
         <p id="computerchoice-text">Computer Choice: </p>
         <p id="wins-text"> Wins: </p>
         <p id="losses-text">losses: </p>
@@ -44,12 +44,12 @@
     document.onkeyup = function(event) {
         userguess = event.key;
 
-        userchoicetext.textContent = "user choice: " + userguess; 
+        userchoicetext.textContent = "User choice: " + userguess; 
         
 
         // this will asign a guess to the computer
         var computerguess = choices[Math.floor(Math.random() * choices.length)];
-        computerchoicetext.textContent = "computer choice: " + computerguess;
+        computerchoicetext.textContent = "Computer Choice:" + computerguess;
         // the game logic 
 
         if(userguess === computerguess){
