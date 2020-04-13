@@ -1,3 +1,14 @@
 body{
     background-color: lightpink;
 }
+
+#userchoice-text{
+    background-color: #ffffff;
+    width: 305px;
+    height: 125px;
+    position: absolute;
+    top: 143px;
+    left: 125px;
+    border-radius: 20px 
+
+}
