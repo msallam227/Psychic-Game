@@ -11,6 +11,7 @@
     <div>
         <p id="directions-text"><h1> Guess a letter!</h1></p>
         <p id="userchoice-text">Userchoice: </p>
+        <p id="computerchoice-text">Computer Choice: </p>
         <p id="wins-text"> Wins: </p>
         <p id="losses-text">losses: </p>
         <p id="guessesleft-text">guesses left: </p>
@@ -26,6 +27,7 @@
     //display this in the HTML document 
     var directionstext = document.getElementById("directions-text");
     var userchoicetext = document.getElementById("userchoice-text"); 
+    var computerchoicetext = document.getElementById("computerchoice-text");
     var winstext = document.getElementById("wins-text"); 
     var lossestext = document.getElementById("losses-text"); 
     var guesseslefttext = document.getElementById("guessesleft-text");
@@ -42,9 +44,12 @@
     document.onkeyup = function(event) {
         userguess = event.key;
 
+        userchoicetext.textContent = "user choice: " + userguess; 
+        
+
         // this will asign a guess to the computer
         var computerguess = choices[Math.floor(Math.random() * choices.length)];
-
+        computerchoicetext.textContent = "computer choice: " + computerguess;
         // the game logic 
 
         if(userguess === computerguess){
@@ -52,7 +57,7 @@
 
         }else{
             lossestext.textContent = "losses: " + losses++; 
-            guesseslefttext.textContent = "guesses left:" + guessesleft--; 
+            guesseslefttext.textContent = "guesses left: " + guessesleft--; 
         
         }
 
