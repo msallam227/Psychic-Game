@@ -32,3 +32,13 @@ body{
     left: 901px; 
     border-radius: 20px; 
 }
+
+#losses-text{
+    background-color: #ffffff; 
+    width: 305px; 
+    height: 125px; 
+    position: absolute; 
+    top: 310px; 
+    left: 300px; 
+    border-radius: 20px; 
+}
