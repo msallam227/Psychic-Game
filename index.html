@@ -8,9 +8,22 @@
 
 <body>
 
+    <div>
+        <p id="directions-text"><h1> Guess a letter!</h1></p>
+        <p id="userchoice-text"></p>
+        <p id="wins-text"></p>
+        <p id="losses-text"></p>
+        <p id="guessesleft-text"></p>
+
+
+    </div>
+
     <script type="text/javascript">
     // An easier way to make an array without hard coding the alphabet. 
     let choices = [...Array(26).keys()].map(i => String.fromCharCode(i + 97));
+
+    //display this in the HTML document 
+    var directionstext = document.getElementById("directions-text");
     
 
     // this is the counter that will get updated when someone wins or loses.
@@ -44,7 +57,7 @@
     
     
     
-    }
+    };
     
     
     
