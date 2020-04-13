@@ -25,12 +25,26 @@
 
         // this will asign a guess to the computer
         var computerguess = choices[Math.floor(Math.random() * choices.length)];
+
+        // the game logic 
+
+        if(userguess === computerguess){
+            console.log("wins: " + wins + 1);
+        }else{
+            console.log("losses: " + losses++ + " " + "guesses left:" + guessesleft--);
+        }
+
+        if (guessesleft === 0){
+            console.log("You've lost the game!");
+        }else{
+            console.log("guess again!");
+        }
    
 
     
     
     
-    
+    }
     
     
     
