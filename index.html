@@ -11,13 +11,7 @@
     <script type="text/javascript">
     // An easier way to make an array without hard coding the alphabet. 
     let choices = [...Array(26).keys()].map(i => String.fromCharCode(i + 97));
-
-    // this will asign a guess to the computer
-    var computerguess = choices[Math.floor(Math.random() * choices.length)];
-    console.log(computerguess);
-
-    // this will asign a guess to the user
-    //var userguess = 
+    
 
     // this is the counter that will get updated when someone wins or loses.
     var losses = 0;
@@ -25,6 +19,14 @@
     var guessesleft = 9; 
 
     console.log(choices);
+
+    document.onkeyup = function(event) {
+        userguess = event.key;
+
+        // this will asign a guess to the computer
+        var computerguess = choices[Math.floor(Math.random() * choices.length)];
+   
+
     
     
     
