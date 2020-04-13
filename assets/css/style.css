@@ -22,3 +22,13 @@ body{
     left: 500px; 
     border-radius:  20px;
 }
+
+#wins-text{
+    background-color: #ffffff; 
+    width: 305px; 
+    height: 125px; 
+    position: absolute; 
+    top: 143px; 
+    left: 901px; 
+    border-radius: 20px; 
+}
