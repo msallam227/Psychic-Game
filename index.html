@@ -10,10 +10,11 @@
 
     <div>
         <p id="directions-text"><h1> Guess a letter!</h1></p>
-        <p id="userchoice-text"></p>
-        <p id="wins-text"></p>
-        <p id="losses-text"></p>
-        <p id="guessesleft-text"></p>
+        <p id="userchoice-text">Userchoice: </p>
+        <p id="wins-text"> Wins: </p>
+        <p id="losses-text">losses: </p>
+        <p id="guessesleft-text">guesses left: </p>
+        <p id ="encouragement-text"></p>
 
 
     </div>
@@ -27,7 +28,8 @@
     var userchoicetext = document.getElementById("userchoice-text"); 
     var winstext = document.getElementById("wins-text"); 
     var lossestext = document.getElementById("losses-text"); 
-    var guessesleft = document.getElementById("guessesleft-text");
+    var guesseslefttext = document.getElementById("guessesleft-text");
+    var encouragement = document.getElementById("encouragement-text");
     
 
     // this is the counter that will get updated when someone wins or loses.
@@ -46,17 +48,26 @@
         // the game logic 
 
         if(userguess === computerguess){
-            console.log("wins: " + wins + 1);
+            winstext.textContent = "wins: " +  wins++; 
+
         }else{
-            console.log("losses: " + losses++ + " " + "guesses left:" + guessesleft--);
+            lossestext.textContent = "losses: " + losses++; 
+            guesseslefttext.textContent = "guesses left:" + guessesleft--; 
+        
         }
 
         if (guessesleft === 0){
-            console.log("You've lost the game!");
+            encouragement.textContent = "You've lost the game"; 
+            
+            
         }else{
             console.log("guess again!");
-        }
+          
+        };
    
+        
+      
+    
 
     
     
