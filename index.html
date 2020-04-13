@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Psychic Game</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -49,7 +52,7 @@
 
         // this will asign a guess to the computer
         var computerguess = choices[Math.floor(Math.random() * choices.length)];
-        computerchoicetext.textContent = "Computer Choice:" + computerguess;
+        computerchoicetext.textContent = "Computer Choice: " + computerguess;
         // the game logic 
 
         if(userguess === computerguess){
@@ -63,6 +66,7 @@
 
         if (guessesleft === 0){
             encouragement.textContent = "You've lost the game"; 
+            guessesleft = 9; 
             
             
         }else{
