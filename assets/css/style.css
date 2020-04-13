@@ -42,3 +42,13 @@ body{
     left: 300px; 
     border-radius: 20px; 
 }
+
+#guessesleft-text{
+    background-color: #ffffff; 
+    width: 305px; 
+    height: 125px; 
+    position: absolute; 
+    top: 310px; 
+    left: 725px; 
+    border-radius: 20px; 
+}
